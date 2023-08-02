@@ -1,6 +1,5 @@
 name: bebi103
 channels:
-  - bokeh
   - default
 dependencies:
   - python>=3.11
@@ -20,8 +19,6 @@ dependencies:
   - jinja2
   - jsonschema>=3.0
   - jupyter
-  - jupyter_bokeh
-  - jupyterlab
   - matplotlib
   - mypy
   - netcdf4
@@ -40,25 +37,16 @@ dependencies:
   - seaborn
   - selenium
   - setuptools
-  - sphinx
-  - sphinxcontrib-applehelp
-  - sphinxcontrib-devhelp
-  - sphinxcontrib-htmlhelp
-  - sphinxcontrib-jsmath
-  - sphinxcontrib-qthelp
-  - sphinxcontrib-serializinghtml
   - statsmodels
   - sympy
   - toolz
   - tqdm
   - traitlets
-  - twine
   - ujson
   - xarray
   - xlrd
   - zarr
   - pip:
-    - accessible-pygments
     - altair
     - arviz
     - bebi103
@@ -68,27 +56,11 @@ dependencies:
     - commonmark
     - iqplot
     - jupyter-cache
-    # Use v 0.8.3 of the spellchecker because 0.8.4 and above use Jupyter 4.0
-    - jupyterlab-spellchecker==0.8.3
-    - markdown-it-py
+    - jupyterlab
+    - jupyter_bokeh
+    - jupyterlab-spellchecker
     - multiprocess
-    - myst-nb
-    - myst-parser
-    - git+https://github.com/justinbois/nbsphinx.git@toggle_input
     - polars
-    - pydata-sphinx-theme
-    - recommonmark
-    - sphinx-book-theme
-    - sphinx-comments
-    - sphinx-copybutton
-    - sphinx-design
-    - sphinx-external-toc
-    - sphinx-jupyterbook-latex
-    - sphinx-multitoc-numbering
-    - sphinx-rtd-theme
-    - sphinx-thebe
-    - sphinx-togglebutton
-    - sphinxcontrib-jquery
     - typing_extensions
     - vega_datasets
     - watermark
