@@ -67,12 +67,16 @@ transformed data {
 
 
 parameters {
-  positive_ordered[m] tau;
+  ordered[m] log_tau;
 }
 
 
+transformed parameters {
+  vector[m] tau = 10 ^ log_tau;
+}
+
 model {
-  tau ~ normal(0, 30);
+  log_tau ~ normal(0.5, 0.75);
   
   for (i in 1:N) {
     target += catastrophe_lpdf(t[i] | tau, signs, m);

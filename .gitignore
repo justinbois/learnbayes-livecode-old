@@ -152,7 +152,15 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# Stan shrapnel
 schools_code*
+*.hpp
+mt_gamma
+mt_weibull
+mt_exp
+mt_two_step
+mt_catastrophe
+mt_catastrophe_prior_pred
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
